@@ -1,0 +1,9 @@
+click[left, (25, 125)]
+ 
+	fun[Win , ON]
+  		type [r]
+ 	fun[Win ,OFF]
+	
+	fun[Back]
+
+type[fuck]

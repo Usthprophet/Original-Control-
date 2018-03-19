@@ -1,0 +1,14 @@
+fun[Win , ON]
+	type [aa]
+fun[Win ,OFF]
+
+
+
+
+
+
+
+
+
+
+click[left,(25,125)]fun[Win,ON]type[r]fun[Win,OFF]type[cmd]
