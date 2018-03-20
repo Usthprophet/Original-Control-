@@ -31,6 +31,8 @@ bool DotExchange(char &ch)		//标点符号的转换		非shift
 	else if (ch == ',') { ch = 188; return true; }
 	else if (ch == '.') { ch = 190; return true; }
 	else if (ch == '/') { ch = 220; return true; }
+	else if (ch == '-') { ch = 189; return true; }
+	else if (ch == '=') { ch = 187; return true; }
 	return false;
 }
 
@@ -51,6 +53,8 @@ bool DotExchangeAdvanced(char &ch)		//标点符号的 shift转换
 	else if (ch == '<') { ch = 188; return true; }
 	else if (ch == '>') { ch = 190; return true; }
 	else if (ch == '?') { ch = 220; return true; }
+	else if (ch == '+') { ch = VK_ADD; return true; }
+
 	return false;
 }
 

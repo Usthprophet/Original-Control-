@@ -57,9 +57,21 @@ bool Parameter(std::string &Context, std::string &Parameter)		//是否能找到一个命
 
 void FuncMapping(std::string FuncName,std::string FactorName)
 {
-	if(TestForTextOperate==true)std::cout <<"FuncName is:"<<FuncName << " FactorName is:" << FactorName<<"\n";
+	if (TestForTextOperate == true)
+	{
+		std::cout << "FuncName is:" << FuncName << " FactorName is:" << FactorName << "\n";
+		getchar();
+	}
 
-	if (FuncName == "click")
+
+	if (FuncName == "sleep")			//延时
+	{
+		int FindSitu = FactorName.find(']');
+		FactorName = FactorName.substr(1, FindSitu-1);
+		NOOOOOP(FactorName);
+	}
+
+	else if (FuncName == "click")		//鼠标
 	{
 		if (TestForTextOperate == true)std::cout << "In click\n";
 
@@ -102,7 +114,7 @@ void FuncMapping(std::string FuncName,std::string FactorName)
 		}
 
 	}
-	else if (FuncName == "fun")
+	else if (FuncName == "fun")			//功能键
 	{
 		if (TestForTextOperate == true)std::cout << "In FUN\n";
 		std::string FUNCTION;
@@ -132,7 +144,7 @@ void FuncMapping(std::string FuncName,std::string FactorName)
 		}
 	}
 
-	else if (FuncName == "type")
+	else if (FuncName == "type")			//键盘
 	{
 		if (TestForTextOperate == true)std::cout << "Function type\n";
 		int CommandSitu = FactorName.find(']');

@@ -77,3 +77,10 @@ bool ClickFuncStr(std::string FStr, std::string SITUATION)		//一个重载，允许不松
 		return false;
 	}
 }
+
+
+void NOOOOOP(std::string tt)
+{
+	int t = atoi(tt.c_str());
+	Sleep(t);
+}

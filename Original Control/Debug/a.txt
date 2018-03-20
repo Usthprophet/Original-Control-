@@ -6,4 +6,10 @@ click[left, (25, 125)]
 	
 	fun[Back]
 
-type[fuck]
+type[cmd]
+
+fun[Enter]
+
+type[shutdown]  fun[Space] type[-s]
+
+fun[Enter]

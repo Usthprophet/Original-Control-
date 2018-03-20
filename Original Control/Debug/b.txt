@@ -1,0 +1,5 @@
+type[fucking]fun[Space]type[test]
+
+fun[Ctrl,ON]
+	fun[Enter]
+fun[Ctrl,OFF]
